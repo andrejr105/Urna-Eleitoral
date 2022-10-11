@@ -62,15 +62,15 @@ Inicio
    escreval("")
    escreval("iniciando a eleição.")
    
-   //timer meramente estetico
-   //timer(500)
+   timer meramente estetico
+   timer(500)
    
-   //para i de 0 ate 10 passo 1 faca
-   //escreva(".")
+   para i de 0 ate 10 passo 1 faca
+   escreva(".")
 
-   //fimpara
+   fimpara
    
-   //timer(0)
+   timer(0)
    
    limpatela
    //Estrutura de repetição para eleitores
