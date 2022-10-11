@@ -62,7 +62,7 @@ Inicio
    escreval("")
    escreval("iniciando a eleição.")
    
-   timer meramente estetico
+   //timer meramente estetico
    timer(500)
    
    para i de 0 ate 10 passo 1 faca
