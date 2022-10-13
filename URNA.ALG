@@ -129,10 +129,10 @@ Inicio
 
     
 
-   escreval("============ZERÉZIMA============")
+   escreval("============RESULTADO============")
    escreval(nomeCandidato1, ":", contCandidato1)
    escreval(nomeCandidato2, ":", contCandidato2)
    escreval(nomeCandidato3, ":", contCandidato3)
    escreval("0-Branco", contBranco)
-   escreval("Votos Nulos", contNulo)
+   escreval("-1 - Votos Nulos", contNulo)
 Fimalgoritmo
