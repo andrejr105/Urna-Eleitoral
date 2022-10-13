@@ -95,7 +95,7 @@ Inicio
           escreval("0 - voto em branco")
           contBranco <- contBranco + 1
      caso -1
-          escreval("Voto em nulo")
+          escreval("-1 - Voto em nulo")
           contNulo <- contNulo + 1
      fimescolha
      
