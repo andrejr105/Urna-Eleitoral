@@ -128,7 +128,7 @@ Inicio
     ate(resposta2 <> "s")
 
     
-
+   //Exiba o resultado
    escreval("============RESULTADO============")
    escreval(nomeCandidato1, ":", contCandidato1)
    escreval(nomeCandidato2, ":", contCandidato2)
