@@ -1,5 +1,5 @@
 # Urna-Eletronica
-Projeto de melhoria de urnas eletronicas
+Projeto de uma urna eletrônica
 
 Este projeto será desevolvido em portugol, para fins de estudo.
 
