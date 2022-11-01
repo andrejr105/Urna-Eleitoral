@@ -17,7 +17,7 @@ namespace DAL
         {
 
         }
-        public List<Candidatos> Buscar(int _numero)
+        public List<Candidatos> Buscar(string _titulo)
         {
             return new List<Candidatos>();
         }

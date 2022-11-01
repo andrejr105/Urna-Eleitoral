@@ -17,7 +17,7 @@ namespace DAL
         {
 
         }
-        public List<Eleicao> Buscar(int _turno)
+        public List<Eleicao> Buscar(int _turno, int _ano)
         {
             return new List<Eleicao>();
         }
