@@ -10,8 +10,8 @@ namespace DAL
         {
             SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
             SqlCommand cmd = cn.CreateCommand();
-            cmd.CommandText = "INSERT INTO Eleitor (Titulo, Nome) " +
-                "VALUES(@Titulo, @Nome) ";
+            cmd.CommandText = "INSERT INTO Eleitor (Nome, Titulo) " +
+                "VALUES(@Nome, @Titulo) ";
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@Titulo", _eleitor.TituloEleitor);
             cmd.Parameters.AddWithValue("@Nome", _eleitor.Nome);

@@ -9,5 +9,9 @@ internal class Program
         Eleitor eleitor = new Eleitor("Felipe", "122345667");
         EleitorBLL eleitorBLL = new EleitorBLL();
         eleitorBLL.Inserir(eleitor);
+
+        Eleicao eleicao = new Eleicao(2012, 2,null,null);
+        EleicaoBLL eleicaoBLL = new EleicaoBLL();
+        eleicaoBLL.Inserir(eleicao);
     }
 }
