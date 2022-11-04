@@ -9,7 +9,7 @@ namespace BLL
     {
         public void Inserir(Eleitor _eleitor)
         {
-            if (_eleitor.Nome.Length <= 2)
+            if (_eleitor.Nome.Length <= 2) 
                 throw new Exception("O neme do eleitor dever ter mais de 2 caractre ");
             
 
@@ -21,7 +21,6 @@ namespace BLL
         {
             EleitorDAL _eleitorDAL = new EleitorDAL();
             _eleitorDAL.Excluir(_eleitor);
-
         }
 
         public void Alterar(Eleitor _eleitor)
