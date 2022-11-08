@@ -7,8 +7,8 @@ namespace Models
     {
 		private int id_eleitor;
 		private string nome;
-		private string tituloEleitor;
-		private bool seuVoto;
+		private string titulo;
+		private bool votou;
 
 		public int ID_ELEITOR
 		{
@@ -17,17 +17,17 @@ namespace Models
 		}
 
 
-		public bool SeuVoto
+		public bool Votou
         {
-			get { return seuVoto; }
-			set { seuVoto = value; }
+			get { return votou; }
+			set { votou = value; }
 		}
 
 
-		public string TituloEleitor
+		public string Titulo
         {
-			get { return tituloEleitor; }
-			set { tituloEleitor = value; }
+			get { return titulo; }
+			set { titulo = value; }
 		}
 
 	
@@ -39,13 +39,13 @@ namespace Models
 			set { nome = value; }
 		}
 
-		public Eleitor(string _nome, string _tituloEleitor)
+		public Eleitor(string _nome, string _titulo, bool _votou)
 		{
 
 			Nome = _nome;
-	
-			TituloEleitor = _tituloEleitor;
-			SeuVoto = false;
+
+            titulo = _titulo;
+            Votou = _votou;
 			
 		}
 

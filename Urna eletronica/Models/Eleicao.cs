@@ -7,6 +7,7 @@ namespace Models
 		private int turno;
 		private List<Candidatos> candidatos;
 		private List<Eleitor>  eleitores;
+		private int id_eleicao;
 
 		public List<Eleitor> Eleitores
         {
@@ -33,14 +34,18 @@ namespace Models
 			get { return ano; }
 			set { ano = value; }
 		}
+		public int ID_ELEICAO
+        {
+			get { return id_eleicao; }
+			set { id_eleicao = value; }
+		}
 		public Eleicao(int _ano, int _turno, List<Candidatos> _candidatos, List<Eleitor> _eleitores)
 		{
-			Ano = _ano;
-			Turno = _turno;
-			Candidatos = _candidatos;
 			Eleitores = _eleitores;
-		
-		}
+			Candidatos = _candidatos;
+			Turno = _turno;
+			Ano = _ano;
+        }
 
 	}
 }

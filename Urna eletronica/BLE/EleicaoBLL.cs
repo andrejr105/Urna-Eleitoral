@@ -10,13 +10,13 @@ namespace BLL
         { 
 
 
-            EleicaoDAL _eleicaoBLL = new EleicaoDAL();
-            _eleicaoBLL.Inseir(_eleicao);
+            EleicaoDAL _eleicaoDal = new EleicaoDAL();
+            _eleicaoDal.Inseir(_eleicao);
         }
         public void Excluir(Eleicao _eleicao)
         {
-            EleicaoDAL _eleicaoBLL = new EleicaoDAL();
-            _eleicaoBLL.Excluir(_eleicao);
+            EleicaoDAL _eleicaoDal = new EleicaoDAL();
+            _eleicaoDal.Excluir(_eleicao);
         }
         public void Alterar(Eleicao _eleicao)
         {

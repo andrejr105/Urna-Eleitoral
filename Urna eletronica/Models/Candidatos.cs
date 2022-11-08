@@ -3,9 +3,9 @@
     public class Candidatos
     {
 		private string nome;
-		private int numcandidatos;
+		private int numero;
 		private string pratido;
-
+		private int id_candidato;
 
 		public string Pratido
 
@@ -15,10 +15,10 @@
 		}
 
 
-		public int Numcandidatos
+		public int Numero
         {
-			get { return numcandidatos; }
-			set { numcandidatos = value; }
+			get { return numero; }
+			set { numero = value; }
 		}
 
 
@@ -27,11 +27,16 @@
 			get { return nome; }
 			set { nome = value; }
 		}
-		public Candidatos(string _nome , int _numcandidatos, string _pratido)
+		public int ID_CANDIDATO
+		{
+			get { return id_candidato; }
+			set { id_candidato = value; }
+		}
+        public Candidatos(string _nome , int _numero)
 		{
 			 Nome = _nome;	
-			 Numcandidatos = _numcandidatos;
-			Pratido = _pratido;
+			 Numero = _numero;
+
 		 
 		}
 

@@ -5,10 +5,10 @@ namespace BLL
 {
     public class CandidatoBLL
     {
-        public void Inseir(Candidatos _Candidatos)
+        public void Inserir(Candidatos _Candidatos)
         {
             CandidatosDAL _candidatosDAL = new CandidatosDAL();
-            _candidatosDAL.Inseir(_Candidatos);
+            _candidatosDAL.Inserir(_Candidatos);
         }
         public void Excluir(Candidatos _Candidatos)
         {
