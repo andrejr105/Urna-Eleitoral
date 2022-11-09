@@ -66,9 +66,26 @@ namespace DAL
 
         }
 
-        public List<Eleitor> Buscar(string _titulo)
+        public DataTable BuscarPorTitulo(string _titulo)
         {
-            return new List<Eleitor>();
+            SqlDataAdapter da = new SqlDataAdapter();
+            DataTable dt = new DataTable();
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            
+            try 
+	        {	   
+                da.SelectCommand = cn.CreateCommand();
+		        da.SelectCommand.CommandText = "SELECT ID_USUARIO, Nome, Titulo, votou from eleitor where Titulo = @Titulo";
+                da.SelectCommand.CommandType = CommandType.Text;
+                da.SelectCommand.Parameters.AddWithValue("@Titulo",_titulo);
+                cn.Open();
+                da.Fill(dt);
+                return dt;
+	        }
+	        finally
+	        {
+                cn.Close();
+	        }
         }
 
     }
